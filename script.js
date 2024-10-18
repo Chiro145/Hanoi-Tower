@@ -22,7 +22,7 @@ function init_cor(amount){
         DISK_MANAGE[i].style.transition = `left 500ms ease, top 500ms ease`;
         DISK_MANAGE[i].style.position = 'absolute';
         DISK_MANAGE[i].style.display = 'flex';
-        DISK_MANAGE[i].style.left = '10%';
+        DISK_MANAGE[i].style.left = '25%';
         DISK_MANAGE[i].style.top = 90 - (100 * (w_scale * 166 / window.innerHeight) * i_c) + '%';
         i_c++;
     }
@@ -31,7 +31,7 @@ function init_cor(amount){
 
 function swap_disk(id, source, target){
     DISK_MANAGE[id].style.transition = `left ${g_animation_delay}ms ease, top ${g_animation_delay}ms ease`;
-    DISK_MANAGE[id].style.left = (10 + 20 * target) + '%';
+    DISK_MANAGE[id].style.left = (25 + 25 * target) + '%';
     DISK_MANAGE[id].style.top = 90 - (100 * (w_scale * 166 / window.innerHeight) * i_level[target]) + '%';
     i_level[target]++;
     i_level[source]--;
@@ -80,8 +80,8 @@ for (let i = 1; i <= 3; i++) {
     img.src = `img/STICK.png`
     img.id = "STICK"
     img.style.display = 'flex'
-    img.style.top = '75%'
-    img.style.left = (10 + 20 * (i - 1)) + '%'
+    img.style.top = (85 - (100 * (w_scale * 166 / window.innerHeight) * 1)) + '%'
+    img.style.left = (25 + 25 * (i - 1)) + '%'
     container.appendChild(img)
 }
 

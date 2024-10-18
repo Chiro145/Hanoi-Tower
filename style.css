@@ -1,3 +1,8 @@
+body {
+  color: white;
+  font-weight: bold;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -20,4 +25,52 @@ img {
 
 #BACKGROUND {
     background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #4568DC, #B06AB3);
+    color: #fff;
+    border: none;
+    outline: none;
+    &:hover {
+        background-color: #0062cc;
+    }
+    &:active {
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 200px;
+  height: 5px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #c471ed;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #c471ed;
+  border-radius: 50%;
+  cursor: pointer;
 }

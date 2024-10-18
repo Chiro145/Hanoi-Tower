@@ -18,13 +18,13 @@
             <label>Number of Disks:</label>
             <input type = "range" id = "I_NOD" min = "1" max = "8" value = "3"
                 oninput = "document.getElementById('DISK_SIZE').innerHTML = this.value" />
-            <label id="DISK_SIZE">3</label>
+            <label id="DISK_SIZE"></label>
         </p>
         <p>
             <label>Animation Delay:</label>
             <input type = "range" id = "I_DA" min = "10" max = "1000" value = "50"
                 oninput = "document.getElementById('DELAY_SIZE').innerHTML = this.value"/>
-            <span><label id="DELAY_SIZE">50</label> ms</span>
+            <span><label id="DELAY_SIZE"></label> ms</span>
         </p>
         <p><input type="submit" value="Start" onclick="Started()" /></p>
     </div>
