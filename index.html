@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Hanoi Tao Work</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
-  <body>
+
+  <body id = "BACKGROUND">
     <main>
-        <h1>WELCOME TO MY WEBSITE</h1>  
+        <h1>TOWER OF HANOI</h1>  
     </main>
+    <div>
+        <p>
+            <label>Number of Disks:</label>
+            <input type = "range" id = "I_NOD" min = "1" max = "8" value = "3"
+                oninput = "document.getElementById('DISK_SIZE').innerHTML = this.value" />
+            <label id="DISK_SIZE">3</label>
+        </p>
+        <p>
+            <label>Animation Delay:</label>
+            <input type = "range" id = "I_DA" min = "10" max = "1000" value = "50"
+                oninput = "document.getElementById('DELAY_SIZE').innerHTML = this.value"/>
+            <span><label id="DELAY_SIZE">50</label> ms</span>
+        </p>
+        <p><input type="submit" value="Start" onclick="Started()" /></p>
+    </div>
+    <div id="container"></div>
     <script src="script.js"></script>
   </body>
 </html>

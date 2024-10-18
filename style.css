@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    transform: scale(var(--w_scale)) translate(-50%, -50%);
+    transform-origin: top left;
+    position: absolute;
+}
+
+#DISK {
+    z-index: 1;
+}
+
+#STICK{
+    z-index: 0;
+}
+
+#BACKGROUND {
+    background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+}
