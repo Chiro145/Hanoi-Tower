@@ -1,0 +1,9 @@
+<svg width="1050" height="100" viewBox="0 0 1050 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 50C0 77.6142 22.3857 100 50 100H150H250H350H450H500H550H600H700H800H900H1000C1027.61 100 1050 77.6142 1050 50C1050 22.3858 1027.61 0 1000 0H900H800H700H600H550H500H450H350H250H150H50C22.3857 0 0 22.3858 0 50Z" fill="url(#paint0_linear_2_636)"/>
+<defs>
+<linearGradient id="paint0_linear_2_636" x1="0" y1="50" x2="1050" y2="50" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5C7D"/>
+<stop offset="1" stop-color="#6A82FB"/>
+</linearGradient>
+</defs>
+</svg>

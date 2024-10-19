@@ -11,24 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
 
-  <body id = "BACKGROUND">
-    <main>
-        <h1>TOWER OF HANOI SOLVER</h1>  
-    </main>
-    <div>
-        <p>
-            <label>NUMBER OF DISKS:</label>
-            <input type = "range" id = "I_NOD" min = "1" max = "8" value = "3"
-                oninput = "document.getElementById('DISK_SIZE').innerHTML = this.value" />
-            <label id="DISK_SIZE"></label>
-        </p>
-        <p>
-            <label>ANIMATION DELAY:</label>
-            <input type = "range" id = "I_DA" min = "10" max = "1000" value = "50"
-                oninput = "document.getElementById('DELAY_SIZE').innerHTML = this.value"/>
-            <span><label id="DELAY_SIZE"></label> ms</span>
-        </p>
-        <p><input type="submit" value="START" onclick="Started()" /></p>
+  <body id="BACKGROUND">
+    <div class="UIBOX">
+        <span id="TITLE">TOWER OF HANOI SOLVER</span>  
+        <div>
+            <p>
+                <label>NUMBER OF DISKS:</label>
+                <input type="range" id="I_NOD" min="1" max="8" value="3"
+                    oninput = "document.getElementById('DISK_SIZE').innerHTML = this.value" />
+                <label id="DISK_SIZE">3</label>
+            </p>
+            <p>
+                <label>ANIMATION DELAY:</label>
+                <input type="range" id="I_DA" min="10" max="1000" value="200"
+                    oninput = "document.getElementById('DELAY_SIZE').innerHTML = this.value"/>
+                <span><label id="DELAY_SIZE">200</label> ms</span>
+            </p>
+            <div style="display: flex; align-items: center;">
+                <p><input type="button" value="START" onclick="Started()" /></p>
+                <p><input type="button" value="ABORT" onclick="Abort()" /></p>
+                <div class="box_progess_bar"> 
+                    <div class="progess_bar"></div> 
+                </div> 
+            </div>
+        </div>
     </div>
     <div id="container"></div>
     <script src="script.js"></script>

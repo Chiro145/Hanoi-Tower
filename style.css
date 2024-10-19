@@ -1,10 +1,39 @@
 body {
-  color: white;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+img {
+    transform: scale(var(--w_scale)) translate(-50%, -50%);
+    transform-origin: top left;
+    position: absolute;
+}
+
+.box_progess_bar {
+    background-color: #fff;
+    border-radius: 2.3vw;
+    height: 2.3vw;
+    width: 16vw;
+    display: flex;
+}
+
+.progess_bar {
+    transition: width var(--g_animation_delay) ease-in-out;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.15vw;
+    background-image: linear-gradient(to right, #6A82FB, #B06AB3);
+    height: 2vw;
+    width: var(--g_pprogess);
+    border-radius: 2vw;
+}
+
+.UIBOX {
+    transform: translate(1.5%, 5%);
 }
 
 .container {
@@ -13,10 +42,9 @@ body {
     height: 100%;
 }
 
-img {
-    transform: scale(var(--w_scale)) translate(-50%, -50%);
-    transform-origin: top left;
-    position: absolute;
+#TITLE {
+    font-weight: 800;
+    font-size: 2vw;
 }
 
 #DISK {
@@ -31,21 +59,18 @@ img {
     background-image: linear-gradient(to right, #9796f0, #fbc7d4);
 }
 
-input[type="submit"] {
-  
-    font-weight: bold;
+input[type="button"] {
+    font-weight: 500;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
     font-style: normal;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
+    padding: 0.5vw 1vw;
+    font-size: 0.8vw;
+    border-radius: 2vw;
+    border-width: 0.15vw;
     cursor: pointer;
-    background-image: linear-gradient(to right, #4568DC, #B06AB3);
+    background-image: linear-gradient(to right, #6A82FB, #B06AB3);
     color: #fff;
-    border: none;
+    margin-right: 1vw;
     outline: none;
     &:hover {
         background-color: #0062cc;
@@ -56,31 +81,32 @@ input[type="submit"] {
 }
 
 input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 200px;
-  height: 5px;
-  background: #ddd;
-  border-radius: 5px;
-  outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16vw;
+    height: 0.3vw;
+    border-radius: 0.5vw;
+    background: #fff;
+    outline: none;
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none; 
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background: #c471ed;
-  border-radius: 50%;
-  cursor: pointer;
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 1.5vw;
+    background: #c471ed;
+    cursor: pointer;
 }
 
 input[type="range"]::-moz-range-thumb {
-  -moz-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background: #c471ed;
-  border-radius: 50%;
-  cursor: pointer;
+    border: 0.2vw solid #fff;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1vw;
+    height: 1vw;
+    background: #c471ed;
+    border-radius: 1vw;
+    cursor: pointer;
 }
