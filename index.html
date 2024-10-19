@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hanoi Tao Work</title>
+    <title>TOWER OF HANOI SOLVER</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,22 +13,22 @@
 
   <body id = "BACKGROUND">
     <main>
-        <h1>TOWER OF HANOI</h1>  
+        <h1>TOWER OF HANOI SOLVER</h1>  
     </main>
     <div>
         <p>
-            <label>Number of Disks:</label>
+            <label>NUMBER OF DISKS:</label>
             <input type = "range" id = "I_NOD" min = "1" max = "8" value = "3"
                 oninput = "document.getElementById('DISK_SIZE').innerHTML = this.value" />
             <label id="DISK_SIZE"></label>
         </p>
         <p>
-            <label>Animation Delay:</label>
+            <label>ANIMATION DELAY:</label>
             <input type = "range" id = "I_DA" min = "10" max = "1000" value = "50"
                 oninput = "document.getElementById('DELAY_SIZE').innerHTML = this.value"/>
             <span><label id="DELAY_SIZE"></label> ms</span>
         </p>
-        <p><input type="submit" value="Start" onclick="Started()" /></p>
+        <p><input type="submit" value="START" onclick="Started()" /></p>
     </div>
     <div id="container"></div>
     <script src="script.js"></script>
