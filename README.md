@@ -1,3 +1,3 @@
-**12I TEAM PROJECT :b**
+**Tower of Hanoi Solver**
 
-**[COOKER](https://www.youtube.com/watch?v=dQw4w9WgXcQ)**
+**[LINK](chiro145.github.io/Hanoi-Tower)**
