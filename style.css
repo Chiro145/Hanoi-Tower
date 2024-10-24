@@ -66,6 +66,7 @@ input[type="button"] {
     padding: 0.5vw 1vw;
     font-size: 0.8vw;
     border-radius: 2vw;
+    border-color: #fff;
     border-width: 0.15vw;
     cursor: pointer;
     background-image: linear-gradient(to right, #6A82FB, #B06AB3);
